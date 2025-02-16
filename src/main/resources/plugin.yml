@@ -1,0 +1,8 @@
+name: SpectatorClickListener
+version: 1.0
+main: com.yourname.spectatorclicklistener.SpectatorClickListener
+api-version: 1.20
+commands:
+  # Add commands if needed in the future
+permissions:
+  # Define permissions if needed

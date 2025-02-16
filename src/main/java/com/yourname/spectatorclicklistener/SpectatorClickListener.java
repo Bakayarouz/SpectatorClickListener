@@ -5,7 +5,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerInteractEvent;
-import org.bukkit.event.player.PlayerInteractEvent.Action;
+import org.bukkit.event.player.PlayerInteractEvent.Action; // <-- This import is necessary
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class SpectatorClickListener extends JavaPlugin implements Listener {
@@ -29,12 +29,14 @@ public class SpectatorClickListener extends JavaPlugin implements Listener {
         // Check if the player is in Spectator mode
         if (player.getGameMode() == GameMode.SPECTATOR) {
 
-            // Handle left-click action
+            // Check if the player performed a left-click action
             if (event.getAction() == Action.LEFT_CLICK_AIR || event.getAction() == Action.LEFT_CLICK_BLOCK) {
+                // Handle left-click in Spectator mode
                 player.sendMessage("You left-clicked in Spectator mode!");
             } 
-            // Handle right-click action
+            // Check if the player performed a right-click action
             else if (event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.RIGHT_CLICK_BLOCK) {
+                // Handle right-click in Spectator mode
                 player.sendMessage("You right-clicked in Spectator mode!");
             }
         }

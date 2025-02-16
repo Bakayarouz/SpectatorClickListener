@@ -16,11 +16,11 @@
     </repositories>
 
     <dependencies>
-        <!-- Paper API dependency -->
+        <!-- Paper API dependency with stable version -->
         <dependency>
             <groupId>io.papermc</groupId>
             <artifactId>paper-api</artifactId>
-            <version>1.20.4-R0.1-SNAPSHOT</version>
+            <version>1.20.4</version> <!-- Stable version -->
             <scope>provided</scope>
         </dependency>
 

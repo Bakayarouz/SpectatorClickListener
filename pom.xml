@@ -18,9 +18,9 @@
     <dependencies>
         <!-- Paper API dependency with stable version -->
         <dependency>
-            <groupId>io.papermc</groupId>
+            <groupId>io.papermc.paper</groupId>
             <artifactId>paper-api</artifactId>
-            <version>1.20.4</version> <!-- Stable version -->
+            <version>${minecraft.version}-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
 

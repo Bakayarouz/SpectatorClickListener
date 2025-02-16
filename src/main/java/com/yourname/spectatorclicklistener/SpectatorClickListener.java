@@ -5,7 +5,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerInteractEvent;
-import org.bukkit.event.player.PlayerInteractEvent.Action; // <-- This import is necessary
+import org.bukkit.event.player.PlayerInteractEvent.Action;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class SpectatorClickListener extends JavaPlugin implements Listener {
